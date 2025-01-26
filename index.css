@@ -1,0 +1,576 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", serif;
+}
+
+body {
+    background-color: #b3b3b3;
+    /* position: relative; */
+}
+
+.dashboard_container {
+    display: flex;
+    justify-content: normal;
+}
+
+.left {
+    width: 19%;
+    height: 100vh;
+    background-color: #fff;
+    position: fixed;
+    z-index: 99;
+}
+
+.left h1 {
+    margin: 20px 0 10px 10px;
+    font-weight: 600;
+}
+
+.expenser {
+    margin: 10px 0 0 25px;
+}
+
+.expenser h3 {
+    line-height: 50px;
+    font-weight: 500;
+}
+
+.expenser h3 i {
+    width: 35px;
+    height: 35px;
+}
+
+.right {
+    width: 78%;
+    margin: 20px;
+    position: absolute;
+    right: 0;
+}
+
+.right h1 {
+    font-weight: 600;
+}
+
+.three_box {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+
+.box1 {
+    width: 31%;
+    height: 80px;
+    background-color: #fff;
+    align-content: center;
+    padding-left: 20px;
+    border-radius: 5px;
+    position: relative;
+}
+
+.box1 p {
+    font-size: medium;
+}
+
+.box1 i {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    background-color: #afd7d7;
+    color: rgb(79, 60, 150);
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    text-align: center;
+    align-content: center;
+    font-size: large;
+
+}
+
+#dollar {
+    background-color: #b5f3b5;
+    color: green;
+    font-size: large;
+}
+
+#arrow_down {
+    background-color: #f7b3b3;
+    color: red;
+    font-size: large;
+
+}
+
+.two_box {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+
+}
+
+.overview {
+    width: 48%;
+    height: 400px;
+    border-radius: 5px;
+    background-color: #fff;
+}
+
+.overview h2 {
+    margin: 20px 0 10px 20px;
+    font-weight: 600;
+}
+
+.chart {
+    width: 92%;
+    height: 300px;
+    background-color: #e7e2e2;
+    text-align: center;
+    align-content: center;
+    margin: 20px;
+    border-radius: 5px;
+}
+
+.recent {
+    /* width: 80%; */
+    height: 315px;
+    background-color: #fff;
+    margin-top: 30px;
+    border-radius: 5px;
+}
+
+.recent h1 {
+    padding: 20px 28px;
+}
+
+.recent table {
+    width: 100%;
+    text-align: center;
+    border-collapse: collapse;
+}
+
+.recent table tr,
+td,
+th {
+    border-top: 1px solid black;
+    padding: 15px 28px;
+    font-weight: 500;
+    text-align: justify;
+}
+
+#green {
+    color: green;
+}
+
+.red {
+    color: red;
+}
+
+.transaction_container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 30px;
+}
+
+.trans h1 {
+    font-size: 25px;
+}
+
+.trans p {
+    font-size: medium;
+}
+
+.transaction_container button {
+    width: 185px;
+    height: 35px;
+    background-color: rgb(79, 60, 150);
+    color: #fff;
+    border: none;
+    font-size: medium;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.data_box {
+
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+    height: 110px;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 0%5px;
+}
+
+.days select {
+    width: 275px;
+    height: 35px;
+    font-size: 15px;
+    padding-left: 15px;
+}
+
+#search {
+    width: 275px;
+    height: 35px;
+    font-size: 15px;
+    padding-left: 15px;
+}
+
+.showing_box {
+    height: 230px;
+    background-color: #fff;
+    border-radius: 5px;
+    margin-top: 30px;
+}
+
+.showing_box table {
+    border-collapse: collapse;
+    text-align: center;
+    width: 100%;
+}
+
+.showing_box tr,
+td,
+th {
+    border: none;
+
+}
+
+.show_result {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 28px;
+}
+
+.btn {
+    padding: 5px 15px;
+    background-color: #fff;
+    border: 1px solid gray;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#one {
+    background-color: rgb(79, 60, 150);
+    color: #fff;
+}
+
+.blue {
+    color: rgb(79, 60, 150);
+}
+
+#food {
+    color: rgb(79, 60, 150);
+    /* background-color: rgb(181, 181, 253); */
+}
+
+#expense_t {
+    color: red;
+}
+
+.income {
+    color: green;
+}
+
+
+#new_budget {
+    width: 210px;
+    height: 35px;
+    background-color: rgb(79, 60, 150);
+    color: #fff;
+    border: none;
+    font-size: medium;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.total_budget {
+    display: flex;
+    justify-content: space-between;
+}
+
+.total {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+    background-color: #fff;
+    padding: 25px 28px;
+    height: 150px;
+    width: 31%;
+    border-radius: 5px;
+}
+
+#color_purple {
+    color: rgb(79, 60, 150);
+}
+
+.left_side p:nth-child(2) {
+    margin: 15px 0 5px 0;
+}
+
+.right_side {
+    text-align: end;
+
+}
+
+.left_side h2 {
+    font-weight: 500;
+}
+
+.right_side h2 {
+    font-weight: 500;
+}
+
+.right_side p:nth-child(2) {
+    margin: 15px 0 5px 0;
+}
+
+#eight {
+    color: green;
+}
+
+#eight_zero {
+    color: green;
+}
+
+#three {
+    color: red;
+}
+
+.budget_category {
+    background-color: #fff;
+    margin-top: 30px;
+    height: 330px;
+    border-radius: 5px;
+}
+
+.budget_category h1 {
+    padding: 20px 28px;
+    font-weight: 500;
+}
+
+.category_container {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 28px 0 28px;
+}
+
+.housing {
+    display: flex;
+    align-items: baseline;
+}
+
+.house_level {
+    background-color: blue;
+    /* width: 100%; */
+    height: 8px;
+    margin: 0 28px;
+    border-radius: 10px;
+
+
+}
+
+.housing p {
+    margin: 0 0 10px 5px;
+    background-color: rgb(182, 182, 205);
+    color: rgb(79, 60, 150);
+    width: 85px;
+    text-align: center;
+    border-radius: 20px;
+    font-weight: 300;
+    padding: 5px;
+}
+
+.housing h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+    font-weight: 500;
+}
+
+#variable_color {
+    color: rgb(133, 103, 3);
+    background-color: rgb(249, 249, 192);
+}
+
+.food_level {
+    background-color: rgb(173, 135, 12);
+    height: 8px;
+    border-radius: 10px;
+    width: 75%;
+}
+
+.variable {
+    height: 8px;
+    margin: 0 28px;
+    border-radius: 10px;
+    background-color: #b3b3b3;
+}
+
+#over_budgetColor {
+    background-color: rgb(244, 208, 208);
+    color: red;
+    font-size: 12px;
+    font-weight: 400;
+}
+
+.over_level {
+    height: 8px;
+    margin: 0 28px;
+    border-radius: 10px;
+    background-color: red;
+    width: 108%;
+}
+
+.update_container {
+    background-color: #fff;
+    border-radius: 5px;
+    margin-top: 30px;
+    height: 330px;
+
+}
+
+.update_container h1 {
+    padding: 15px 28px;
+    font-weight: 500;
+}
+
+.budget_increase {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 15px 28px;
+
+}
+
+.adjust h3{
+    font-weight: 500;
+}
+
+#last_day{
+    color: #000;
+    background-color: #fff;
+    padding: 5px 15px;
+    width: 170px;
+    font-size: medium;
+    border: none;
+    border-radius: 5px;
+}
+
+.total_spending{
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.spending{
+    background-color: #fff;
+    padding: 20px 28px;
+    width: 22%;
+    border-radius: 5px;
+}
+
+.spending h4{
+    font-weight: 400;
+    margin-bottom: 15px;
+}
+
+.spending h1{
+    font-weight: 600;
+    font-size: 26px;
+}
+
+.spending p span i{
+    margin-right:5px;
+    color: green;
+}
+.spending p span{
+    color: green;
+}
+
+.spending p span{
+    margin-right: 10px;
+}
+#downRed{
+    color: red;
+}
+#topHousing{
+   background-color: blue;
+   width: 80%;
+}
+#topFood{
+    background-color: blue;
+    width: 55%;
+}
+#topTrans{
+background-color: blue;
+width: 45%;
+}
+.Key_insight{
+    background-color: #fff;
+    margin-top: 30px;
+    height: 360px;
+    border-radius: 5px;
+    position: relative;
+}
+.Key_insight h1{
+    font-weight: 500;
+    padding: 20px 28px;
+}
+
+
+.Key_insight h3{
+    font-weight: 500;
+    margin: 20px 0 0 100px;
+}
+
+.Key_insight p{
+    margin: 0 0 15px 100px;
+}
+
+#right{
+    position: absolute;
+    left: 26px;
+    top: 31%;
+    width: 45px;
+    height: 45px;
+    font-size: 23px;
+    background-color: aqua;
+    text-align: center;
+    align-content: center;
+    border-radius: 50%;
+    background-color: #d0f0d0;
+    color: green;
+    font-size: large;
+}
+#triangle{
+    position: absolute;
+    left: 26px;
+    top: 55%;
+    width: 45px;
+    height: 45px;
+    font-size: 23px;
+    background-color: aqua;
+    text-align: center;
+    align-content: center;
+    border-radius: 50%;
+    background-color: #efc3c3;
+    color: red;
+    font-size: large;
+}
+#savingArrow{
+    position: absolute;
+    left: 26px;
+    top: 81%;
+    width: 45px;
+    height: 45px;
+    font-size: 23px;
+    background-color: aqua;
+    text-align: center;
+    align-content: center;
+    border-radius: 50%;
+    background-color: #c9c9ec;
+    color: blue;
+    font-size: large;
+}
+
+
