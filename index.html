@@ -1,11 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
 
+
+
+
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="index.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
         integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -16,6 +19,7 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
         rel="stylesheet">
+    <link rel="stylesheet" href="index.css">
 </head>
 
 <body>
@@ -75,7 +79,7 @@
 
             <div class="recent">
                 <h1>Recent Transaction</h1>
-                <table>
+                <table id="table1">
                     <tr>
 
                         <th>DATE</th>
@@ -538,7 +542,7 @@
                 <h1>All Categories</h1>
                 <hr>
                 <i class="fa-solid fa-pen" id="pen"></i>
-                <i class="fa-solid fa-house" ></i>
+                <i class="fa-solid fa-house"></i>
                 <i class="fa-solid fa-pen" id="pen2"></i>
                 <i class="fa-regular fa-lightbulb" id="home"></i>
                 <div class="house_container">
@@ -590,14 +594,15 @@
                 <div class="spending" id="total_income">
                     <h4>Total Expense</h4>
                     <h1>$18,230</h1>
-                    <p><span id="downRed"> <i class="fa-solid fa-arrow-trend-down" id="downRed"></i>8% increase</span></p>
+                    <p><span id="downRed"> <i class="fa-solid fa-arrow-trend-down" id="downRed"></i>8% increase</span>
+                    </p>
                 </div>
                 <div class="spending" id="total_income">
                     <h4>Net Savings</h4>
                     <h1>$6,270</h1>
                     <p><span><i class="fa-solid fa-arrow-trend-up"></i>15% increase</span> </p>
                 </div>
-                
+
             </div>
 
 
@@ -617,45 +622,163 @@
                 </div>
             </div>
 
+
             <div class="monthly_report_container">
-                <h1>Monthly Reports</h1>
-                <hr>
-                <div class="report_box">
-                    <div class="month_box">
-                        <h3>MONTH</h3>
-                        <p>January 2024</p>
-                        <p>December 2023</p>
-                    </div>
-                    <div class="income_box">
-                        <h3>INCOME</h3>
-                        <p>$8,500</p>
-                        <p>$8,200</p>
-                    </div>
-                    <div class="expense_box">
-                        <h3>EXPENSE</h3>
-                        <p>$6,200</p>
-                        <p>$6,800</p>
-                    </div>
 
-                    <div class="saving_box">
-                        <h3>SAVINGS</h3>
-                        <p>$2,300</p>
-                        <p>$1,400</p>
-                    </div>
+                <div class="icon_container">
+                    <div class="monthlyreport">
 
-                    <div class="saving_box">
-                        <h3>STATUS</h3>
-                        <p>On Track</p>
-                        <p>Below Target</p>
+                        <h1>Monthly Reports</h1>
                     </div>
-                    <div class="saving_box">
-                        <h3>ACTION</h3>
-                        <p>View Details</p>
-                        <p>View Details</p>
+                    <div class="icon">
+
+                        <i class="fa-solid fa-arrow-up-wide-short" id="wide"></i>
+                        <i class="fa-solid fa-file-arrow-down"></i>
                     </div>
 
                 </div>
+
+
+
+                <table id="table2">
+                    <tr>
+
+                        <th>MONTH</th>
+                        <th>INCOME</th>
+                        <th>EXPENSE</th>
+                        <th>SAVINGS</th>
+                        <th>STATUS</th>
+                        <th>ACTION</th>
+                    </tr>
+
+                    <tr>
+
+
+                        <td>January 2024</td>
+                        <td>$8,500 </td>
+                        <td>$6,200</td>
+                        <td>$2,300</td>
+                        <td id="onTrack"><span>On Track</span></td>
+                        <td class="view">View Details</td>
+
+                    </tr>
+                    <tr>
+                        <td>December 2023</td>
+                        <td>$8,200</td>
+                        <td>$6,800</td>
+                        <td>$1,400</td>
+                        <td id="belowTarget"><span>Below Target</span></td>
+                        <td class="view">View Details</td>
+                    </tr>
+
+
+                </table>
             </div>
+
+            <div class="transaction_container">
+                <div class="trans">
+                    <h1>Profile Setting</h1>
+                    <p>Manage your account settings and preferences</p>
+                </div>
+
+            </div>
+
+
+            <div class="personal_information">
+                <h1>Personal Information</h1>
+                <hr>
+
+                <div class="icon_user_container">
+                    <div class="icon_user">
+    
+                        <i class="fa-regular fa-user"></i>
+                    </div>
+                    <div class="photo">
+                        <button>Change Photo</button>
+                        <p>JPG, GIF or PNG. Max size 2MB</p>
+                    </div>
+                </div>
+
+                <div class="name">
+                    <div class="fname">
+                        <label for="">First Name</label><br>
+                        <input type="text" name="" id="">
+                    </div>
+                    <div class="lname">
+                        <label for="">Last Name</label><br>
+                        <input type="text" name="" id="">
+                    </div>
+                </div>
+                <div class="email">
+
+                    <label for="">Email</label><br>
+                    <input type="text" name="" id=""><br>
+
+                </div>
+                <div class="phone">
+
+                    <label for="">Phone Number</label>
+                    <br>
+                    <input type="number" name="" id=""><br>
+                </div>
+            </div>
+
+            <div class="security_container">
+                <h1>Security</h1>
+                <hr>
+                <div class="email">
+
+                    <label for="">Current Password</label><br>
+                    <input type="text" name="" id="password"><br>
+
+                </div>
+                <div class="email">
+
+                    <label for="">New Password</label><br>
+                    <input type="text" name="" id="password"><br>
+
+                </div>
+                <div class="email">
+
+                    <label for="">Confirm Password</label><br>
+                    <input type="text" name="" id="password"><br>
+
+                </div>
+
+            </div>
+
+            <div class="preference_container">
+                <h1>Preferences</h1>
+                <hr>
+                <div class="email_notification">
+                    <div class="email_left">
+                        <h3>Email Notifications</h3>
+                        <p>Receive email about your account activity </p>
+                    </div>
+                    <div class="email_right">
+                        <i class="fa-solid fa-toggle-on"></i>
+                    </div>
+                </div>
+                <div class="email_notification">
+                    <div class="email_left">
+                        <h3>SMS  Notifications</h3>
+                        <p>Receive text messages for important updates </p>
+                    </div>
+                    <div class="email_right">
+                        <i class="fa-solid fa-toggle-off" id="off_color"></i>
+                    </div>
+                </div>
+            </div>
+
+            <div class="transaction_container">
+                <div class="trans">
+                   
+                </div>
+                <button id="save_changes">Save Changes</button>
+            </div>
+
+
+
 
 
 
@@ -663,6 +786,13 @@
 
         </div>
     </div>
+
+
+
+
+
+
+    <script src="script.js"></script>
 
 </body>
 
