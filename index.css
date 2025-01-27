@@ -60,7 +60,7 @@ body {
 }
 
 .box1 {
-    width: 31%;
+    width: 32%;
     height: 80px;
     background-color: #fff;
     align-content: center;
@@ -109,8 +109,8 @@ body {
 }
 
 .overview {
-    width: 48%;
-    height: 400px;
+    width: 49%;
+    height: 450px;
     border-radius: 5px;
     background-color: #fff;
 }
@@ -122,7 +122,7 @@ body {
 
 .chart {
     width: 92%;
-    height: 300px;
+    height: 350px;
     background-color: #e7e2e2;
     text-align: center;
     align-content: center;
@@ -296,7 +296,7 @@ th {
     background-color: #fff;
     padding: 25px 28px;
     height: 150px;
-    width: 31%;
+    width: 32%;
     border-radius: 5px;
 }
 
@@ -454,6 +454,7 @@ th {
     font-size: medium;
     border: none;
     border-radius: 5px;
+    cursor: pointer;
 }
 
 .total_spending{
@@ -465,7 +466,7 @@ th {
 .spending{
     background-color: #fff;
     padding: 20px 28px;
-    width: 22%;
+    width: 23.5%;
     border-radius: 5px;
 }
 
@@ -564,7 +565,6 @@ width: 45%;
     width: 45px;
     height: 45px;
     font-size: 23px;
-    background-color: aqua;
     text-align: center;
     align-content: center;
     border-radius: 50%;
@@ -572,5 +572,184 @@ width: 45%;
     color: blue;
     font-size: large;
 }
+
+.food_three_box{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+
+.foodBox{
+    background-color: #fff; 
+    width: 32%;  
+    height: 200px;  
+    position: relative;
+    border-radius: 5px;
+    
+}
+.foodBox  h3{
+    font-weight: 600;
+    /* text-align: center; */
+    padding-top: 30px;
+    margin-left: 100px;
+}
+
+#spent_month{
+    /* text-align: center; */
+    margin-left: 100px;
+}
+
+.budget_box{
+    display: flex;
+    justify-content: space-between;
+    margin: 10px 28px 0;
+}
+
+
+
+.budget_box h4{
+    font-weight: 400;
+    font-size: larger;
+}
+.bottom_level{
+    display: flex;
+    justify-content: space-between;
+    margin: 0 28px;
+}
+.level2{
+    height: 8px;
+    background: green;
+    border-radius: 10px;
+    width: 75%;
+}
+#level2{
+    background-color: blue;
+}
+
+
+#level3{
+    background-color: purple;
+}
+.budget_level{
+    height: 8px;
+    background-color: #b3b3b3;
+    margin: 10px 28px;
+    border-radius: 10px;
+}
+
+.foodBox i{
+    position:absolute;
+    top: 34px;
+    left: 31px;
+    background-color: #cbeccb;
+    width: 45px;
+    height: 45px;
+    text-align: center;
+    align-content: center;
+    font-size: 25px;
+    border-radius: 5px;
+    color: green;
+}
+
+#three_dot{
+    position: absolute;
+    top: 20px;
+    left: 83%;
+    background-color: #fff;
+    color: #b3b3b3;
+}
+
+#arrow_right_left{
+    background-color: #d3d3fa;
+    color: blue;
+    font-size: larger;
+}
+#shoppingbag{
+    background-color: rgb(253, 226, 253);
+    color: purple;
+}
+
+
+.all_container_category{
+    margin-top: 30px;
+    background-color: #fff;
+    height: 300px;
+    border-radius: 5px;
+    position: relative;
+}
+
+.all_container_category h1{
+    padding: 20px 28px;
+    font-weight: 500;
+}
+.house_container{
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 80px;
+    align-items: center;
+}
+
+.house_left h3{
+    font-weight: 600;
+}
+
+.all_container_category i{
+    position: absolute;
+    top: 116px;
+    left: 29px;
+    width: 40px;
+    height: 40px;
+    background-color: #f5c8c8;
+    text-align: center;
+    align-content: center;
+    border-radius: 5px;
+    color: red;
+}
+
+#pen{
+    left: 94%;
+    top: 114px;
+    background-color: #fff;
+    color: #b3b3b3;
+    font-size: 20px;
+}
+#pen2{
+    left: 94%;
+    top: 68%;
+    background-color: #fff;
+    color: #b3b3b3;
+    font-size: 20px;
+}
+
+#home{
+    top: 70%;
+    background-color: rgb(240, 240, 171);
+    color: rgb(133, 112, 26);
+}
+
+#monthly{
+    color: #000;
+    background-color: #fff;
+    padding: 5px 40px 5px 20px;
+    font-size: medium;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: 400;
+    margin-right: 10px;
+}
+
+#report{
+    width: 170px;
+    height: 40px;
+
+}
+
+#total_income{
+    width: 32%;
+}
+
+
+
 
 
