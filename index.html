@@ -20,6 +20,7 @@
         href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="mediaQuerry.css">
 </head>
 
 <body>
@@ -45,19 +46,37 @@
 
             <div class="three_box">
                 <div class="box1">
-                    <p>Total Balance</p>
-                    <h2>$24,500</h32>
+                    <div class="balance">
+
+                        <p>Total Balance</p>
+                        <h2>$24,500</h32>
+                    </div>
+                    <div class="dollar_icon">
+
                         <i class="fa-solid fa-dollar-sign" id="dollar"></i>
+                    </div>
                 </div>
                 <div class="box1">
-                    <p>Monthly Income</p>
-                    <h2>$8,200</h32>
+                    <div class="monthly_income">
+
+                        <p>Monthly Income</p>
+                        <h2>$8,200</h32>
+                    </div>
+                    <div class="upArrow_icon">
+
                         <i class="fa-solid fa-arrow-up"></i>
+                    </div>
                 </div>
                 <div class="box1">
-                    <p>Monthly Expenses</p>
-                    <h2>$4,800</h32>
+                    <div class="monthly_expense">
+
+                        <p>Monthly Expenses</p>
+                        <h2>$4,800</h2>
+                    </div>
+                    <div class="downArrow_icon">
+
                         <i class="fa-solid fa-arrow-down" id="arrow_down"></i>
+                    </div>
                 </div>
             </div>
 
@@ -161,8 +180,8 @@
 
                         <td>2024-01-15</td>
                         <td>Grocery Shopping </td>
-                        <td id="food">Food & Dining</td>
-                        <td id="expense_t">Expense</td>
+                        <td id="food"> <span>Food & Dining</span></td>
+                        <td id="expense_t"><span>Expense</span></td>
                         <td class="red">-$120.50</td>
                         <td><span class="blue">Edit</span> <span class="
                             red">Delete</span></td>
@@ -170,8 +189,8 @@
                     <tr style="border-bottom: 1px solid;">
                         <td>2024-01-14</td>
                         <td>Salary Deposit</td>
-                        <td class="income">Income</td>
-                        <td class="income">Income</td>
+                        <td class="income"><span>Income</span></td>
+                        <td class="income"><span>Income</span></td>
                         <td id="green">+$3,500.00</td>
                         <td><span class="blue">Edit</span> <span class="red"> Delete</span></td>
                     </tr>
